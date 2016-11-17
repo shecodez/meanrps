@@ -1,0 +1,23 @@
+@import 'variables.less';
+
+.hidden { display: none !important; }
+
+.primary { color: @primary !important; }
+
+.center {text-align: center !important; }
+
+.mr-3 { margin-right: 3px; }
+.ml-3 { margin-left: 3px; }
+
+/*Bootstrap button outline override*/
+.btn-outline {
+  background-color: transparent;
+  color: inherit;
+  transition: all .5s;
+}
+.btn-warning.btn-outline {
+  color: #f0ad4e;
+}
+.btn-warning.btn-outline:hover {
+  color: #fff;
+}

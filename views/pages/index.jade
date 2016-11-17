@@ -1,0 +1,19 @@
+//
+   Created by Nicole J. Nobles on 11/17/2016.
+
+extends layout
+
+block content
+    section#home
+        .container
+            .row
+                .col-xm-12
+                    .jumbotron
+                        h1 MEAN
+                            span.primary RPS!
+                        p A MEAN Rock Paper Scissors App
+
+                        p: a.btn.btn-warning.btn-lg(href='/play', role='button') Play RPS
+
+//block js
+    script(src='/controllers/home.js')
