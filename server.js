@@ -140,9 +140,10 @@ app.use(function (err, req, res, next) {
     });
 });
 
-var ip 		= process.env.HEROKU_NODEJS_IP 	 || '127.0.0.1';
-var port 	= process.env.HEROKU_NODEJS_PORT || 3000;
+var ip 		= process.env.IP    || '127.0.0.1';
+var port 	= process.env.PORT  || 3000;
 
-app.listen(port, ip);
+//app.listen(port, ip);
+app.listen(port);
 
 module.exports = app;
