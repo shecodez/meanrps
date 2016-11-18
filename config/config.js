@@ -20,7 +20,7 @@ var config = {};
 config.name         = pkg.name;
 config.version      = pkg.version;
 config.description  = pkg.description;
-//config.authors    = pkg.authors;
+config.authors      = pkg.authors;
 config.keywords     = pkg.keywords;
 config.engine       = pkg.engines.node;
 

@@ -3,51 +3,52 @@
 
 doctype html
 html(lang='en')
-   //(lang=i18n.lng())
-   head
-      meta(charset='utf-8')
-      meta(http-equiv='X-UA-Compatible', content='IE=edge')
-      meta(name='viewport', content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
-      title= 'meanRPS'
-      meta(name='author', content='#{author}')
-      meta(name='description', content='#{description}')
-      meta(name='keywords', content='#{keywords}')
+    //(lang=i18n.lng())
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no')
+        title= 'meanRPS'
+        meta(name='author', content='#{authors}')
+        meta(name='description', content='#{description}')
+        meta(name='keywords', content='#{keywords}')
 
-      // Bootstrap Core CSS
-      link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.min.css')
-      // Custom CSS
-      link(rel='stylesheet', href='/stylesheets/style.css')
+        // Bootstrap Core CSS
+        link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.min.css')
+        // Custom CSS
+        link(rel='stylesheet', href='/stylesheets/style.css')
 
-   body(ng-app="appModule")
-      header
-         include ../partials/nav
-      main
-         block content
-      footer
-         include ../partials/footer
+    //(ng-app="appModule")
+    body
+        header
+            include ../partials/nav
+        main
+            block content
+        footer
+            include ../partials/footer
 
-      // jQuery
-      script(rel='text/javascript', src='/lib/jquery/dist/jquery.min.js')
-      // Bootstrap Core JavaScript
-      script(rel='text/javascript', src='/lib/bootstrap/dist/js/bootstrap.min.js')
-      // Angular JavaScript
-      script(rel='text/javascript', src='/lib/angular/angular.js')
+        // jQuery
+        script(rel='text/javascript', src='/lib/jquery/dist/jquery.min.js')
+        // Bootstrap Core JavaScript
+        script(rel='text/javascript', src='/lib/bootstrap/dist/js/bootstrap.min.js')
+        // Angular JavaScript
+        script(rel='text/javascript', src='/lib/angular/angular.js')
 
-      // Google Analytics
-      // TODO: change UA-XXXXX-X (#{ga}) to be my site's ID.
-      script.
-         (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                       (i[r].q = i[r].q || []).push(arguments)
-                    }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-         ga('create', '#{ga}', 'auto');
-         ga('send', 'pageview');
+        // Google Analytics
+        // TODO: change #{ga} to be my site's ID.
+        script.
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                            (i[r].q = i[r].q || []).push(arguments)
+                        }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', '#{ga}', 'auto');
+            ga('send', 'pageview');
 
-      block js
+        block js
