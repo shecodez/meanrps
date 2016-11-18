@@ -10,9 +10,11 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "bower install"
   },
   "dependencies": {
+    "bower": "latest",
     "ejs": "2.4.1",
     "express": "4.13.3",
     "jade": "~1.11.0",
